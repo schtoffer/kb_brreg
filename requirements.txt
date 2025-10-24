@@ -1,1 +1,4 @@
-requests==2.31.0
+# Core dependencies
+requests>=2.31.0
+
+# Note: difflib is part of Python standard library (no installation needed)

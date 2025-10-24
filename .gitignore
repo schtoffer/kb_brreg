@@ -16,15 +16,38 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
 
 # Virtual Environment
 .venv/
 venv/
 env/
 ENV/
+env.bak/
+venv.bak/
 
 # IDE
 .vscode/
@@ -32,6 +55,8 @@ ENV/
 *.swp
 *.swo
 *~
+.spyderproject
+.spyproject
 
 # OS
 .DS_Store
@@ -44,8 +69,42 @@ Thumbs.db
 
 # Logs
 *.log
+logs/
 
 # Environment variables
 .env
 .env.local
 .env.*.local
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
